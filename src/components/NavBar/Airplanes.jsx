@@ -1,11 +1,12 @@
 import React from 'react' 
 import NavBar from './NavBar'
+import CreateAirplane from '../Airplanes/CreateAirplane'
 
 const Airplanes = () => {
     return (
         <div>
             <NavBar />
-            Hello from the airplanes page
+            <CreateAirplane />
         </div>
     )
 }
