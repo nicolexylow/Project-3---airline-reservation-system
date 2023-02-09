@@ -36,3 +36,23 @@
     transform: rotate(360deg);
   }
 }
+
+.airplane-table {
+  width: 70%;
+  border: 1px solid black;
+  margin: 0 auto;
+}
+
+td, tr {
+  border: 1px solid black;
+}
+
+table {
+  margin: 0 auto;
+}
+
+td {
+  padding: 15px;
+}
+
+
