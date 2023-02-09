@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import React from 'react'
 import NavBar from './NavBar'
 import CreateFlight from '../Flights/CreateFlight'
