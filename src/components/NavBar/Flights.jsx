@@ -1,11 +1,12 @@
 import React from 'react'
 import NavBar from './NavBar'
+import CreateFlight from '../Flights/CreateFlight'
 
 const Flights = () => {
     return (
         <div>
             <NavBar />
-            Hello from the flights page
+            <CreateFlight />
         </div>
     )
 }
