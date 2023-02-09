@@ -14,12 +14,15 @@ const CreateFlight = () => {
 
     return (
         <div>
-            <h1>
-                Virgin Airlines
-            </h1>
-            <button onClick={handleClick}>
-                Create Flight
-            </button>
+            <div className='form-click-container'>
+                <h1>
+                    Virgin Airlines
+                </h1>
+                <button onClick={handleClick}>
+                    Create Flight
+                </button>
+            </div>
+            
 
             {/* shows the create plane form if the button is clicked */}
             {showForm ?

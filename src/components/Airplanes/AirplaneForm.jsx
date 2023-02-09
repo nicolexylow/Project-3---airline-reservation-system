@@ -10,14 +10,16 @@ const AirplaneForm = (props) => {
 
     const handleSubmit = (event) => {
         event.preventDefault()
-        console.log('Name:', name)
-        console.log('Rows:', rows)
-        console.log('Cols:', cols)
         setShowInfo(true)
+
+        props.onSubmit(name, rows, cols)
+
+        
     }
 
     return (
-        <div>
+        <div className='airplane-form'>
+
             <form onSubmit={handleSubmit}>
                 <input placeholder='name' required onChange={(event) => {setName(event.target.value)}} />
                 <input type="number" placeholder='rows' required onChange={(event) => {setRows(event.target.value)}} />
@@ -26,6 +28,7 @@ const AirplaneForm = (props) => {
                 <button type='button' onClick={props.cancel}>Cancel</button>
                 <button>Save</button>
             </form>
+
 
             {showInfo ?
                 <AirplaneInfo name={name} rows={rows} cols={cols} /> :

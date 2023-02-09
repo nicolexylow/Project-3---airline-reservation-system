@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
 import axios from 'axios';
+import NavBar from './NavBar/NavBar';
 
 const USERS_URL = 'http://localhost:3000/users.json';
 
-class Login extends Component {
+class LogIn extends Component {
     constructor() {
         super();
         this.state = {
@@ -31,6 +32,7 @@ class Login extends Component {
     render() {
         return (
             <div>
+                <NavBar />
                 <UserList users={this.state.users} />
             </div>
         )
@@ -96,7 +98,7 @@ const UserList = (props) => {
 //     )
 // }
 
-export default Login
+export default LogIn
 
 // export default function LogIn() {
 //     const [post, setPost] = React.useState('');

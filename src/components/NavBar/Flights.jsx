@@ -10,4 +10,4 @@ const Flights = () => {
         </div>
     )
 }
-export default Airplanes;
+export default Flights;
