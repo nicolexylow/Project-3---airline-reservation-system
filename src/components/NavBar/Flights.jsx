@@ -1,13 +1,13 @@
-import React from 'react'
-import NavBar from './NavBar'
+import React from 'react';
+import NavBar from './NavBar';
+import AirplaneForm from './Airplanes';
 
-const Flights = () => {
-    return (
-        <div>
-            <NavBar />
-            Hello from the flights page
-        </div>
-    )
-}
+    const Flights = (props) => {
+        return(
+            <div>
+                <AirplaneForm />
+            </div>
+        );
+    } 
 
-export default Flights
+export default Airplanes;

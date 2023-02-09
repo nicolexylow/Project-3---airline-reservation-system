@@ -1,4 +1,5 @@
 import React, {useState} from 'react'
+import NavBar from './NavBar';
 import AirplaneForm from './AirplaneForm'
 
 const CreateAirplane = () => {
@@ -18,7 +19,7 @@ const CreateAirplane = () => {
                 Virgin Airlines
             </h1>
             <button onClick={handleClick}>
-                Create Plane
+                Create plane
             </button>
 
             {/* shows the create plane form if the button is clicked */}
